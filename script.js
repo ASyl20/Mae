@@ -14,9 +14,11 @@ document.querySelector('#heart').addEventListener('mousedown',function(){
             heart.pause()
         },500)
         i++
+        document.querySelector('.battements').innerHTML=i
         console.log(i)
     }
     else{
+        document.querySelector('.battements').innerHTML=i
         this.style.cssText='animation: pulse 1.5s ease-out;animation-iteration-count: infinite;'
     }
 })
